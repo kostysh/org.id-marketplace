@@ -3,6 +3,11 @@
   "private": true,
   "version": "1.2.0",
   "description": "The ORGiD subgraph maps the ORGiD Contract with events in GraphQL",
+  "author": "Winding Tree Developers <dev@windingtree.com>",
+  "contributors": [
+    "Kostiantyn Smyrnov <kostysh@gmail.com>",
+    "Mathieu Tahon <mathieu@windingtree.com>"
+  ],
   "license": "MIT",
   "scripts": {
     "lint": "npx eslint src",

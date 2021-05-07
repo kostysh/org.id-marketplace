@@ -1,0 +1,27 @@
+version: '2.1'
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - ~/orgid-marketplace/postgresql:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - localdev
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - ~/orgid-marketplace/pgadmin:/root/.pgadmin
+    ports:
+      - 5050:80
+    networks:
+      - localdev
+networks:
+  localdev:
+    driver: bridge

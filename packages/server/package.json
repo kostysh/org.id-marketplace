@@ -1,0 +1,22 @@
+{
+  "name": "@windingtree/org.id-marketplace-server",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ORGiD marketplace backend server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "windingtree",
+    "marketplace",
+    "server"
+  ],
+  "author": "Winding Tree Developers <dev@windingtree.com>",
+  "contributors": [
+    "Kostiantyn Smyrnov <kostysh@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
